@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Themes Helper</title>
+        <link href="@Themes.GetResourcePath("Styles", "Blue.css")" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+        @Helpers.ThemePicker()
+        @RenderPage(Themes.GetResourcePath("Partials", "_Special.cshtml"))
+        @RenderBody()
+	</body>
+</html>

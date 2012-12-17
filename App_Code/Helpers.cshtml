@@ -1,0 +1,13 @@
+﻿@helper ThemePicker(){
+    var themes = Themes.AvailableThemes.Select(t => new SelectListItem {
+        Value = t, 
+        Text = t, 
+        Selected = t == Themes.CurrentTheme ? true : false
+    });
+    <div>
+        <form method="post" action="">
+            Current Theme: @Html.DropDownList("Theme", "Choose Theme", themes) 
+            <input type="submit" value="Change theme" />
+        </form>
+    </div>
+}

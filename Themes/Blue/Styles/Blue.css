@@ -1,0 +1,12 @@
+﻿body {
+    background-color: #0033cc;
+    color: #bfcfff;
+    font-family: Arial;
+}
+
+#special{
+    border: 1px solid #ff9900;
+    width: 300px;
+    color: #ffe6bf;
+    padding: 5px;
+}

@@ -1,0 +1,6 @@
+﻿@{
+    if(IsPost && !Request["Theme"].IsEmpty()){
+        Themes.CurrentTheme = Request["Theme"];
+    }
+    Layout = Themes.GetResourcePath("Layouts", "_Layout.cshtml");
+}
